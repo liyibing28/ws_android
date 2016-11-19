@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translatable text of Navigation Drawer Menu -->
+    <string-array name="nav_menu_options">
+        <item >Map</item>
+        <item >Favorites</item>
+        <item >Messages</item>
+        <item >Account/LogIn</item>
+        <item >Settings</item>
+        <item >About</item>
+    </string-array>
+
+    <string-array name="nav_menu_activities" translatable="false">
+        <item>MapActivity</item>
+        <item>StarredHostTabActivity</item>
+        <item>MessagesTabActivity</item>
+        <item>AuthenticatorActivity</item>
+        <item>SettingActivity</item>
+        <item>AboutActivity</item>
+    </string-array>
+
+    <string-array name="nav_menu_icons">
+        <item>@drawable/ic_map_grey600_24dp</item>
+        <item>@drawable/ic_favorite_grey600_24dp</item>
+        <item>@drawable/ic_message_grey600_24dp</item>
+        <item>@drawable/ic_login_grey600_24dp</item>
+        <item>@drawable/ic_settings_grey600_24dp</item>
+        <item>@drawable/ic_help_grey600_24dp</item>
+        <item>@drawable/ic_info_grey600_24dp</item>
+    </string-array>
+
+    <string-array name="distanceUnits">
+        <item name="km">Kilometers</item>
+        <item name="mi">Miles</item>
+    </string-array>
+
+    <string-array name="distanceUnitValues">
+        <item name="km">km</item>
+        <item name="mi">mi</item>
+    </string-array>
+</resources>

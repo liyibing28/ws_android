@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_90f25645de1fbe62e1eda850ef5e25a47a090db7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_e017d075f6960e8bf20efbfc5178aba0c6987dd5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_b55ceaf07d31ec2f268a3965dd077910b4705d02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_3b8af9d1758f2e0ad044faeff8b50a3f6d51f62c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_686fd08c01b870a140ce1026190dfd9c2da2db32/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/opt/SDK/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_6a746c92debe908adf233023ea227ab422fef4d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d21c2a43f06fbaa5c42fe1d3e7fc22358a586e0e">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f40536fa04cea2f5f2793b2b7dccfa8cd2bfb332/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f25e9a96c2b3285ceb23dd336ef1f6a08990c9d3">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_77b6f64155bc7b1323f81aa9994a254db4a1fb99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_deb77be2dd4dea993a98e85362715b76879550e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_ba8987e1e312884dfd633d385ad3a667ef713d5b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_d8d19a5b2d34e9008789995516a0e97e09b012e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_778d769dbbb27abd4b32492e13dda27223ede93a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/libs/AMap2DMap_2.9.2_AMapLocation_3.1.0_20161027.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18b13a225fbb539e53237e55b299280419c94d9f">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/2/AMap2DMap_2.9.2_AMapLocation_3.1.0_20161027_75267f925893b9302cc215a9b297f753d36ba167/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_3b8b26c75e76f0cab2de814cc0d85ef309da346b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_45a60dc820f356cdf4a6dbc9f4d97b33a151c68d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_63f6a0215c3ea68a75c28d57222ea354a28926cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_a4079e1205cca69b3713ed44d3ef4f35253bfa24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/home/lyb/AndroidStudioProjects/github/ws_android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_0c477d028ea6dc3fbec5978abc13345d53ba6ae7/classes.dex" />
+    </item>
+
+</items>

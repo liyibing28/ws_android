@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="primaryWhite">#FFFFFFFF</color>
+    <color name="primaryColor">#03A9F4</color>
+    <color name="primaryColorDark">#0288D1</color>
+    <color name="primaryColorAccent">#00B0FF</color>
+    <color name="primaryTextColor">#DF000000</color>
+    <color name="primaryTextColorLight">#8A000000</color>
+    <color name="primaryTextColorDisable">#42000000</color>
+    <color name="primaryButtonDisable">#1e000000</color>
+    <color name="secondaryListColorLight">#fffbfbfb</color>
+    <color name="secondaryCardBackground">#ffe7e7e7</color>
+    <color name="greyColor">#607D8B</color>
+    <color name="greyColorDark">#455A64</color>
+    <color name="greyColorAccent">#00B0FF</color>
+    <color name="backgroundLightGrey">#EAEAEA</color>
+    <color name="textWarning">#ffff121a</color>
+    <color name="dividerColor">#1e000000</color>
+    <color name="button_dark">#0288D1</color>
 </resources>
