@@ -1,10 +1,22 @@
 package com.example.lyb.wsandorid.activity;
 
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.lyb.wsandorid.R;
+import com.example.lyb.wsandorid.auth.AuthenticationHelper;
+import com.example.lyb.wsandorid.auth.NoAccountException;
+
+import org.json.JSONException;
+
+import java.io.IOException;
+
 /**
  * Created by liyibing on 2016/12/3.
  */
@@ -35,8 +47,89 @@ public class AuthenticatorActivity extends WSSupportAccountAuthenticatorActivity
 
         //mDialogHandler = new DialogHandler(this);
 
-
+        updateView();
     }
 
+    public void updateView() {
+        try {
+            String username = AuthenticationHelper.getAccountUsername();
+            updateLoggedInView(username);
+        } catch (NoAccountException e) {
+            updateLoggedOutView();
+        }
+    }
+    //显示登陆账户
+    public void updateLoggedInView(String username) {
+        notLoggedInLayout.setVisibility(View.GONE);
+        loggedInLayout.setVisibility(View.VISIBLE);
+        txtLoggedInStatus.setText(getString(R.string.current_login_status, username));
+        initDrawer();
+    }
 
+    //显示登陆界面
+    public void updateLoggedOutView() {
+        notLoggedInLayout.setVisibility(View.VISIBLE);
+        loggedInLayout.setVisibility(View.GONE);
+        findViewById(android.R.id.content).invalidate();
+        mDisableNavigation = true;
+        initDrawer();
+    }
+    //和账户验证有关，暂时不太清楚
+    public class AuthenticationTask extends AsyncTask<Void, Void, Void> {
+        int mUID = 0;
+        boolean mNetworkError = false;
+
+        protected Void doInBackground(Void... params) {
+
+            HttpAuthenticator authenticator = new HttpAuthenticator();
+            try {
+                mUID = authenticator.authenticate();
+            } catch (IOException e) {
+                mNetworkError = true;
+            } catch (JSONException e) {
+                mNetworkError = true;
+            } catch (Exception e) {
+                // mUid value will capture anything else.
+            }
+            return null;
+        }
+
+        protected void onPostExecute(Void v) {
+            mDialogHandler.dismiss();
+
+            if (mUID < 1) {
+                if (mNetworkError) {
+                    Toast.makeText(AuthenticatorActivity.this, R.string.http_server_access_failure, Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(AuthenticatorActivity.this, R.string.authentication_failed, Toast.LENGTH_LONG).show();
+                }
+                AuthenticationHelper.removeOldAccount();
+                // And just stay on the page auth screen.
+            }
+            // Otherwise launch the maps activity, with no history
+            else {
+                Intent i = new Intent(AuthenticatorActivity.this, Maps2Activity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                startActivity(i);
+            }
+        }
+    }
+
+    //@Override
+    //protected Dialog onCreateDialog(int id, Bundle args) {
+    //    return mDialogHandler.createDialog(id, getResources().getString(R.string.authenticating));
+    //}
+    /*
+    @Override
+    protected void onStop() {
+        GoogleAnalytics.getInstance(this).reportActivityStop(this);
+        super.onStop();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        GoogleAnalytics.getInstance(this).reportActivityStart(this);
+    }
+    */
 }
