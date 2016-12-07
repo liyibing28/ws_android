@@ -1,5 +1,6 @@
 package com.example.lyb.wsandorid.activity;
 
+import android.accounts.Account;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import com.example.lyb.wsandorid.R;
 import com.example.lyb.wsandorid.auth.AuthenticationHelper;
 import com.example.lyb.wsandorid.auth.NoAccountException;
+import com.example.lyb.wsandorid.auth.http.HttpAuthenticator;
 
 import org.json.JSONException;
 
@@ -74,7 +76,33 @@ public class AuthenticatorActivity extends WSSupportAccountAuthenticatorActivity
         mDisableNavigation = true;
         initDrawer();
     }
-    //和账户验证有关，暂时不太清楚
+    //登出
+    public void logout(View unusedArg) {
+        AuthenticationHelper.removeOldAccount();
+        MemberInfo.doLogout();
+        // TODO: Actually perform a logout operation
+        updateLoggedOutView();
+    }
+
+    public void cancel(View view) {
+        Intent resultIntent = new Intent();
+        setResult(RESULT_CANCELED, resultIntent);
+        finish();
+    }
+
+    public void applyCredentials(View view) {
+
+        String username = editUsername.getText().toString();
+        String password = editPassword.getText().toString();
+        if (!username.isEmpty() && !password.isEmpty()) {
+            //mDialogHandler.showDialog(DialogHandler.AUTHENTICATE);
+            Account account = AuthenticationHelper.createNewAccount(username, password);
+            AuthenticationTask authTask = new AuthenticationTask();
+            authTask.execute();
+        }
+    }
+
+    //验证账号是否正确
     public class AuthenticationTask extends AsyncTask<Void, Void, Void> {
         int mUID = 0;
         boolean mNetworkError = false;
@@ -95,7 +123,7 @@ public class AuthenticatorActivity extends WSSupportAccountAuthenticatorActivity
         }
 
         protected void onPostExecute(Void v) {
-            mDialogHandler.dismiss();
+            //mDialogHandler.dismiss();
 
             if (mUID < 1) {
                 if (mNetworkError) {
@@ -108,7 +136,7 @@ public class AuthenticatorActivity extends WSSupportAccountAuthenticatorActivity
             }
             // Otherwise launch the maps activity, with no history
             else {
-                Intent i = new Intent(AuthenticatorActivity.this, Maps2Activity.class);
+                Intent i = new Intent(AuthenticatorActivity.this, Map2Activity.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                 startActivity(i);
             }

@@ -6,6 +6,7 @@ import android.accounts.AuthenticatorException;
 import android.accounts.OperationCanceledException;
 import android.app.Application;
 
+import com.example.lyb.wsandorid.R;
 import com.example.lyb.wsandorid.WSAndroidApplication;
 
 import java.io.IOException;
