@@ -8,6 +8,7 @@ import android.app.Application;
 
 import com.example.lyb.wsandorid.R;
 import com.example.lyb.wsandorid.WSAndroidApplication;
+import com.example.lyb.wsandorid.util.GlobalInfo;
 
 import java.io.IOException;
 
