@@ -20,7 +20,7 @@
     </string-array>
 
     <string-array name="nav_menu_icons">
-        <item>@drawable/ic_map_grey600_24dp</item>
+        <item>0_24dp@drawable/ic_map_grey60</item>
         <item>@drawable/ic_favorite_grey600_24dp</item>
         <item>@drawable/ic_message_grey600_24dp</item>
         <item>@drawable/ic_login_grey600_24dp</item>
